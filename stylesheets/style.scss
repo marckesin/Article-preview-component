@@ -1,9 +1,74 @@
 @use "reset";
 
+$very-dark-grayish-blue: hsl(217, 19%, 35%);
+$desaturated-dark-blue: hsl(214, 17%, 51%);
+$grayish-blue: hsl(212, 23%, 69%);
+$light-grayish-blue: hsl(210, 46%, 95%);
+
+main {
+  margin: auto;
+}
+
+.article {
+  display: flex;
+  width: 56rem;
+  height: 21rem;
+  //   width: 50%;
+  //   height: 35%;
+  background-color: beige;
+  margin: auto;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.col-content {
+  flex: 62%;
+  padding: 2.5rem 3.4rem 2rem;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.col-image {
+  background: url("../images/drawers.jpg") no-repeat;
+  background-size: cover;
+  flex: 38%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $light-grayish-blue;
+  padding-bottom: 5px;
+}
+
+.description {
+  line-height: 1.5;
+  color: $grayish-blue;
+}
+
+.heading {
+  font-size: 1.6rem;
+  margin-bottom: 0.65rem;
+  color: $very-dark-grayish-blue;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+
+  .avatar {
+    width: 3rem;
+    height: auto;
+    border-radius: 50%;
+  }
 }

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
 *,
 *::before,
 *::after {
@@ -17,13 +18,13 @@
 html,
 body {
   height: 100%;
-  font-size: 15px;
+  font-size: 13px;
+  font-family: "Manrope", sans-serif;
 }
 
 body {
-  line-height: 1.6;
+  line-height: 1.4;
   -webkit-font-smoothing: antialiased;
-  font-family: "Poppins", sans-serif;
 }
 
 img,
@@ -52,6 +53,18 @@ h6 {
   overflow-wrap: break-word;
 }
 
+main {
+  margin: auto;
+}
+
+.article {
+  display: flex;
+  width: 56rem;
+  height: 21rem;
+  background-color: beige;
+  margin: auto;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -59,6 +72,51 @@ h6 {
 
 .attribution a {
   color: #3e52a3;
+}
+
+.col-content {
+  flex: 62%;
+  padding: 2.5rem 3.4rem 2rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.col-image {
+  background: url("../images/drawers.jpg") no-repeat;
+  background-size: cover;
+  flex: 38%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ecf2f8;
+  padding-bottom: 5px;
+}
+
+.description {
+  line-height: 1.5;
+  color: #9eafc2;
+}
+
+.heading {
+  font-size: 1.6rem;
+  margin-bottom: 0.65rem;
+  color: #48556a;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+}
+.social .avatar {
+  width: 3rem;
+  height: auto;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
