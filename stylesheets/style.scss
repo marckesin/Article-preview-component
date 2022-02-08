@@ -13,10 +13,8 @@ main {
   display: flex;
   width: 56rem;
   height: 21rem;
-  //   width: 50%;
-  //   height: 35%;
-  background-color: beige;
-  margin: auto;
+  border-radius: 10px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
 .attribution {
@@ -29,17 +27,20 @@ main {
 
 .col-content {
   flex: 62%;
-  padding: 2.5rem 3.4rem 2rem;
+  padding: 2.25rem 3.5rem 2rem 2.75rem;
   background-color: hsl(0, 0%, 100%);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
 }
 
 .col-image {
   background: url("../images/drawers.jpg") no-repeat;
   background-size: cover;
   flex: 38%;
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
 }
 
 .container {
@@ -54,21 +55,59 @@ main {
 .description {
   line-height: 1.5;
   color: $grayish-blue;
+  margin-bottom: 1.25rem;
 }
 
 .heading {
   font-size: 1.6rem;
-  margin-bottom: 0.65rem;
+  margin-bottom: 1.25rem;
   color: $very-dark-grayish-blue;
 }
 
 .social {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+
+  a {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-flex;
+    background-color: $light-grayish-blue;
+    border-radius: 50%;
+    margin-left: auto;
+    transition: 0.3s;
+
+    svg {
+      margin: auto;
+
+      path {
+        transition: 0.3s;
+      }
+    }
+  }
+
+  a:hover {
+    background-color: $desaturated-dark-blue;
+
+    svg path {
+      fill: hsl(0, 0%, 100%);
+    }
+  }
+
+  p {
+    color: $very-dark-grayish-blue;
+    font-weight: 700;
+  }
+
+  span {
+    color: $grayish-blue;
+    align-items: center;
+  }
 
   .avatar {
-    width: 3rem;
+    width: 3.2rem;
     height: auto;
     border-radius: 50%;
+    margin-right: 1rem;
   }
 }
