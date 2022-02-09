@@ -64,9 +64,10 @@ main {
   color: $very-dark-grayish-blue;
 }
 
-.social {
+.profile {
   display: flex;
   align-items: center;
+  position: relative;
 
   a {
     width: 2.5rem;
@@ -109,5 +110,50 @@ main {
     height: auto;
     border-radius: 50%;
     margin-right: 1rem;
+  }
+
+  .social {
+    position: absolute;
+    bottom: 150%;
+    right: -29%;
+    width: 250px;
+    height: 50px;
+    background-color: $very-dark-grayish-blue;
+    border-radius: 8px;
+    opacity: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    z-index: 1;
+    transition: opacity 0.3s;
+
+    i {
+      color: hsl(0, 0%, 100%);
+      font-size: 1.75rem;
+    }
+
+    span {
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      color: $grayish-blue;
+    }
+  }
+
+  .social::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 45%;
+    margin-left: -5px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: $very-dark-grayish-blue transparent transparent transparent;
+  }
+
+  .social-visible {
+    visibility: visible;
+    opacity: 1;
   }
 }
