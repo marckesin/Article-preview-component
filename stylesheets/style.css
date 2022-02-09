@@ -75,9 +75,7 @@ main {
 }
 
 .col-content {
-  flex: 62%;
-  padding: 2.25rem 3.5rem 2rem 2.75rem;
-  background-color: white;
+  padding: 2.25rem 3.5rem 0 2.75rem;
   display: flex;
   flex-direction: column;
   border-top-right-radius: inherit;
@@ -90,6 +88,14 @@ main {
   flex: 38%;
   border-top-left-radius: inherit;
   border-bottom-left-radius: inherit;
+}
+
+.col-right {
+  flex: 62%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: inherit;
 }
 
 .container {
@@ -117,6 +123,8 @@ main {
   display: flex;
   align-items: center;
   position: relative;
+  padding: 0 3.5rem 2rem 2.75rem;
+  flex-grow: 1;
 }
 .profile a {
   width: 2.5rem;
@@ -153,10 +161,11 @@ main {
   border-radius: 50%;
   margin-right: 1rem;
 }
-.profile .social {
+.profile .social-desktop {
+  visibility: hidden;
   position: absolute;
   bottom: 150%;
-  right: -29%;
+  right: -14%;
   width: 250px;
   height: 50px;
   background-color: #48556a;
@@ -169,17 +178,17 @@ main {
   z-index: 1;
   transition: opacity 0.3s;
 }
-.profile .social i {
+.profile .social-desktop i {
   color: white;
   font-size: 1.75rem;
 }
-.profile .social span {
+.profile .social-desktop span {
   letter-spacing: 4px;
   text-transform: uppercase;
   font-size: 0.9rem;
   color: #9eafc2;
 }
-.profile .social::after {
+.profile .social-desktop::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -192,6 +201,54 @@ main {
 .profile .social-visible {
   visibility: visible;
   opacity: 1;
+}
+
+@media (max-width: 576px) {
+  body {
+    height: 115vh;
+  }
+
+  .article {
+    flex-direction: column;
+    width: 90%;
+    height: 40rem;
+    margin: auto;
+  }
+
+  .col-content {
+    border-radius: unset;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    padding: 3rem 2.25rem 0;
+  }
+
+  .col-image {
+    flex: 42%;
+    border-radius: unset;
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+  }
+
+  .col-right {
+    flex: 58%;
+  }
+
+  .container {
+    padding: 0 0.7rem 0.5rem;
+  }
+
+  .description {
+    margin-bottom: 1.5rem;
+  }
+
+  .heading {
+    font-size: 1.3rem;
+  }
+
+  .profile {
+    padding: 1.5rem 2.25rem;
+    margin-top: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
