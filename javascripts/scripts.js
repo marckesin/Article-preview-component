@@ -1,4 +1,4 @@
-const tooltip = document.querySelector(".social");
+const tooltip = document.querySelector(".social-desktop");
 
 document.getElementById("share").addEventListener("mouseenter", event => {
   tooltip.classList.add("social-visible");
