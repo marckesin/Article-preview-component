@@ -126,7 +126,7 @@ main {
   padding: 0 3.5rem 2rem 2.75rem;
   flex-grow: 1;
 }
-.profile a {
+.profile .share {
   width: 2.5rem;
   height: 2.5rem;
   display: inline-flex;
@@ -134,17 +134,20 @@ main {
   border-radius: 50%;
   margin-left: auto;
   transition: 0.3s;
+  position: absolute;
+  right: 10%;
+  z-index: 3;
 }
-.profile a svg {
+.profile .share svg {
   margin: auto;
 }
-.profile a svg path {
+.profile .share svg path {
   transition: 0.3s;
 }
-.profile a:hover {
+.profile .share:hover {
   background-color: #6d7f97;
 }
-.profile a:hover svg path {
+.profile .share:hover svg path {
   fill: white;
 }
 .profile p {
@@ -165,7 +168,7 @@ main {
   visibility: hidden;
   position: absolute;
   bottom: 150%;
-  right: -14%;
+  right: -13%;
   width: 250px;
   height: 50px;
   background-color: #48556a;
@@ -203,6 +206,34 @@ main {
   opacity: 1;
 }
 
+.social-mobile {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: #48556a;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.25rem 2.5rem;
+}
+.social-mobile i {
+  color: white;
+  font-size: 1.65rem;
+}
+.social-mobile span {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #9eafc2;
+}
+
 @media (max-width: 576px) {
   body {
     height: 115vh;
@@ -211,7 +242,7 @@ main {
   .article {
     flex-direction: column;
     width: 90%;
-    height: 40rem;
+    height: 41rem;
     margin: auto;
   }
 
@@ -246,7 +277,7 @@ main {
   }
 
   .profile {
-    padding: 1.5rem 2.25rem;
+    padding: 1.25rem 2.25rem;
     margin-top: auto;
   }
 }
