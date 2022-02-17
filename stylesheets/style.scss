@@ -14,7 +14,7 @@ main {
   width: 56rem;
   height: 21rem;
   border-radius: 10px;
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0 48px 100px 0;
 }
 
 .attribution {
@@ -161,7 +161,7 @@ main {
     margin-left: -5px;
     border-width: 10px;
     border-style: solid;
-    border-color: $very-dark-grayish-blue transparent transparent transparent;
+    border-color: $very-dark-grayish-blue transparent transparent;
   }
 
   .social-visible {

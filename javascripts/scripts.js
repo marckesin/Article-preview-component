@@ -3,7 +3,7 @@ const socialMobile = document.querySelector(".social-mobile");
 const share = document.getElementById("share");
 const shareIcon = document.querySelector(".icon-color");
 
-window.addEventListener("resize", event => {
+window.addEventListener("resize", () => {
   socialDesktop.classList.remove("social-visible");
   socialMobile.classList.remove("social-visible");
   share.style.backgroundColor = "hsl(210, 46%, 95%)";
