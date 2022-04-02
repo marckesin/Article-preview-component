@@ -17,3 +17,5 @@
 
 # VSCode
 .vscode
+
+*.map
