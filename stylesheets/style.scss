@@ -14,15 +14,16 @@ main {
   width: 56rem;
   height: 21rem;
   border-radius: 10px;
-  box-shadow: rgba(17, 12, 46, 0.15) 0 48px 100px 0;
+  box-shadow: hsla(249, 59%, 11%, 0.15) 0 48px 100px 0;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
 }
 
 .col-content {
