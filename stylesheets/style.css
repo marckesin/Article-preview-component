@@ -62,14 +62,13 @@ main {
   width: 56rem;
   height: 21rem;
   border-radius: 10px;
-  box-shadow: rgba(17, 12, 46, 0.15) 0 48px 100px 0;
+  box-shadow: rgba(16, 12, 45, 0.15) 0 48px 100px 0;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
 }
-
 .attribution a {
   color: #3e52a3;
 }
